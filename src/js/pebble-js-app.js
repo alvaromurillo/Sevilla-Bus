@@ -8533,6 +8533,9 @@ function getNodosCercanos(position) {
 		if (req.readyState == 4) {
 			if(req.status == 200) {
 /* 				console.log("responseText" + req.responseText); */
+/* 				console.log("Latitude: " + position.coords.latitude); */
+        /* 				console.log("Longitude: " + position.coords.longitude); */
+                
 				parseNearBusStops(req.responseText, function(stops){
 						
 					lastStops = stops;					
