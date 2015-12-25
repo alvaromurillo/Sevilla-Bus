@@ -8561,7 +8561,7 @@ Pebble.addEventListener("appmessage", function(e) {
 	}	
 	
 	if(e.payload["near"]) {
-		var locationWatcher = window.navigator.geolocation.getCurrentPosition(getNodosCercanos, locationError, locationOptions);
+		var locationWatcher = navigator.geolocation.getCurrentPosition(getNodosCercanos, locationError, locationOptions);
 	}
 	
 	if(e.payload["addFavorite"]) {

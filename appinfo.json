@@ -1,63 +1,65 @@
 {
-    "versionLabel": "1.0",
-    "uuid": "48ecc80f-70d5-4194-8524-f5bd370047c7",
     "appKeys": {
-    	"favorites": 0,
-		"near": 1,
-		"stopName": 2,
-		"stopNumber": 3,
-		"stopLines": 4,
-		"stopFavorite": 5,
-		"refresh": 6,
-		"appendStop": 7,
-		"appendLine": 8,
-		"lineNumber": 9,
-		"bus1Time": 10,
-		"bus2Time": 11,
-		"addFavorite": 12,
-		"removeFavorite": 13,
-		"noBusStops": 14,
-		"fetchStopDetail": 15,
-		"lastItem": 16
+        "addFavorite": 12,
+        "appendLine": 8,
+        "appendStop": 7,
+        "bus1Time": 10,
+        "bus2Time": 11,
+        "favorites": 0,
+        "fetchStopDetail": 15,
+        "lastItem": 16,
+        "lineNumber": 9,
+        "near": 1,
+        "noBusStops": 14,
+        "refresh": 6,
+        "removeFavorite": 13,
+        "stopFavorite": 5,
+        "stopLines": 4,
+        "stopName": 2,
+        "stopNumber": 3
     },
-    "longName": "Sevilla Bus",
-    "versionCode": 1,
     "capabilities": [
         "location"
     ],
-    "shortName": "Sevilla Bus",
     "companyName": "Alvaro Murillo",
-    "watchapp": {
-        "watchface": false
-    },
+    "longName": "Sevilla Bus",
+    "projectType": "native",
     "resources": {
         "media": [
-        {
-          "type": "png",
-          "name": "IMAGE_MENU_ICON",
-          "file": "img/menu_icon.png",
-		  "menuIcon": true
-        },
-        {
-          "type": "png",
-          "name": "IMAGE_ACTION_BAR_UP",
-          "file": "img/up.png"
-        },
-        {
-          "type": "png",
-          "name": "IMAGE_ACTION_BAR_DOWN",
-          "file": "img/down.png"
-        },
-        {
-          "type": "png",
-          "name": "IMAGE_ACTION_BAR_CLOCK",
-          "file": "img/clock.png"
-        },
-        {
-          "type": "png",
-          "name": "IMAGE_FAVORITE",
-          "file": "img/favorite.png"
-        }
-      ]
+            {
+                "file": "images/up.png",
+                "name": "IMAGE_ACTION_BAR_UP",
+                "type": "png"
+            },
+            {
+                "file": "images/menu_icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/favorite.png",
+                "name": "IMAGE_FAVORITE",
+                "type": "png"
+            },
+            {
+                "file": "images/down.png",
+                "name": "IMAGE_ACTION_BAR_DOWN",
+                "type": "png"
+            },
+            {
+                "file": "images/clock.png",
+                "name": "IMAGE_ACTION_BAR_CLOCK",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "Sevilla Bus",
+    "uuid": "48ecc80f-70d5-4194-8524-f5bd370047c7",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
     }
 }
