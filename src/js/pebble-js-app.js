@@ -8668,13 +8668,13 @@ function getNodosCercanos(position) {
   
   //console.log(position.coords.latitude);
   //console.log(position.coords.longitude);
-	var body = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://impl.services.infotusws.tussam.com/" xmlns:ns1="http://services.infotusws.tussam.com/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http"><soap:Body><getNodosCercanos xmlns="http://services.infotusws.tussam.com/"><latitud xmlns="">' + 37.3605505 /*position.coords.latitude*/ +'</latitud><longitud xmlns="">' + -5.9882894 /*position.coords.longitude*/ + '</longitud><radio xmlns="">400</radio></getNodosCercanos></soap:Body></soap:Envelope>';
+	var body = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://impl.services.infotusws.tussam.com/" xmlns:ns1="http://services.infotusws.tussam.com/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http"><soap:Body><getNodosCercanos xmlns="http://services.infotusws.tussam.com/"><latitud xmlns="">' + /*37.3605505*/ position.coords.latitude +'</latitud><longitud xmlns="">' + /*-5.9882894*/ position.coords.longitude + '</longitud><radio xmlns="">400</radio></getNodosCercanos></soap:Body></soap:Envelope>';
 	var req = new XMLHttpRequest();
 	req.open('POST', "http://www.infobustussam.com:9005/InfoTusWS/services/InfoTus?WSDL", true);
   req.setRequestHeader("Authorization", "Basic " + Base64.encode("infotus-usermobile" + ":" + "2infotus0user1mobile2"));
 	req.setRequestHeader("Content-Type", "text/xml; charset=utf-8");
     req.setRequestHeader("SOAPAction", "");
-	req.setRequestHeader("deviceid", "0123456789abcdef0123456789abcdef" /*Pebble.getAccountToken()*/);
+	req.setRequestHeader("deviceid", Pebble.getAccountToken());
   console.log(Pebble.getAccountToken());
 	req.onload = function(e){
 		if (req.readyState == 4) {
