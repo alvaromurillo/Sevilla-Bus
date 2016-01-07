@@ -58,7 +58,7 @@
     "shortName": "Sevilla Bus",
     "uuid": "48ecc80f-70d5-4194-8524-f5bd370047c7",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "2.0",
     "watchapp": {
         "watchface": false
     }

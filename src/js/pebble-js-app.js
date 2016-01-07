@@ -8675,10 +8675,10 @@ function getNodosCercanos(position) {
 	req.setRequestHeader("Content-Type", "text/xml; charset=utf-8");
     req.setRequestHeader("SOAPAction", "");
 	req.setRequestHeader("deviceid", Pebble.getAccountToken());
-  console.log(Pebble.getAccountToken());
+  //console.log(Pebble.getAccountToken());
 	req.onload = function(e){
 		if (req.readyState == 4) {
-      console.log(req.status);
+      //console.log(req.status);
 			if(req.status == 200 || req.status == 0) {
  				//console.log("responseText" + req.responseText); 
 /* 				console.log("Latitude: " + position.coords.latitude); */
